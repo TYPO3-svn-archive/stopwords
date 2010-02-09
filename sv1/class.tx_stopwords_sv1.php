@@ -32,7 +32,7 @@ require_once(PATH_t3lib . 'class.t3lib_svbase.php');
  * @package		TYPO3
  * @subpackage	tx_stopwords
  *
- * $Id: class.tx_stopwords_sv1.php 29865 2010-02-09 14:38:09Z francois $
+ * $Id$
  */
 class tx_stopwords_sv1 extends t3lib_svbase {
 	public $prefixId = 'tx_stopwords_sv1';		// Same as class name
@@ -90,6 +90,7 @@ class tx_stopwords_sv1 extends t3lib_svbase {
 
 				// If operating in another context, get record as is
 			} else {
+				$where .= t3lib_BEfunc::BEenableFields($table) . t3lib_BEfunc::deleteClause($table);
 				$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery($fields, $table, $where);
 				if ($res && $GLOBALS['TYPO3_DB']->sql_num_rows($res) > 0) {
 					$record = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res);
