@@ -79,8 +79,6 @@ $TCA['tx_stopwords_lists'] = array (
 	),
 	'types' => array (
 		'0' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, title;;;;2-2-2, type;;;;3-3-3, words'),
-		'white' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, title;;;;2-2-2, type;;;;3-3-3, words'),
-		'black' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, title;;;;2-2-2, type;;;;3-3-3, words')
 	),
 	'palettes' => array (
 		'1' => array('showitem' => '')

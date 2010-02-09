@@ -17,7 +17,6 @@ $TCA['tx_stopwords_lists'] = array (
 		'enablecolumns' => array (		
 			'disabled' => 'hidden',
 		),
-		'type' => 'type',
 		'typeicon_column' => 'type',
 		'typeicons' => array(
 			'black' => t3lib_extMgm::extRelPath($_EXTKEY) . 'icon_tx_stopwords_blacklist.gif',
