@@ -70,7 +70,7 @@ class tx_stopwords_sv1 extends t3lib_svbase {
 		$this->words = array();
 			// Load the new list given its uid
 		$uid = intval($parameters['uid']);
-			// The give id is empty, issue warning
+			// The given id is empty, issue warning
 		if (empty($uid)) {
 			if (!empty($this->configuration['debug'])) {
 				t3lib_div::devLog('No uid given. All words will be allowed.', $this->extKey, 2);
