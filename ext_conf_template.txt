@@ -1,2 +1,2 @@
-# cat=basic/enable/; type=boolean; label=Debug: Turn debugging on or off. Debugging will log warnings when something fails. Requires a devlog extensions.
+# cat=basic/enable/; type=boolean; label=LLL:EXT:stopwords/locallang.xml:tx_stopwords.config.debug
 debug = 0
