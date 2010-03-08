@@ -82,7 +82,7 @@ class tx_stopwords_sv1 extends t3lib_svbase {
 			$where = "uid = '" . $uid . "'";
 				// If in the FE context, use overlays API to retrieve record
 				// so that we get it automatically overlayed with current language
-			if ($GLOBALS['TYPO3_MODE'] == 'FE') {
+			if (TYPO3_MODE == 'FE') {
 				$records = tx_overlays::getAllRecordsForTable($fields, $table, $where);
 				if (count($records) > 0) {
 					$record = $records[0];
