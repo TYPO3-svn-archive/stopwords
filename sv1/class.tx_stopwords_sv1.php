@@ -23,6 +23,7 @@
 ***************************************************************/
 
 require_once(PATH_t3lib . 'class.t3lib_svbase.php');
+require_once(t3lib_extMgm::extPath('overlays', 'class.tx_overlays.php'));
 
 
 /**
