@@ -4,7 +4,7 @@ if (!defined ('TYPO3_MODE')) 	die ('Access denied.');
 $TCA['tx_stopwords_lists'] = array (
 	'ctrl' => $TCA['tx_stopwords_lists']['ctrl'],
 	'interface' => array (
-		'showRecordFieldList' => 'sys_language_uid,l10n_parent,l10n_diffsource,hidden,title,type,words'
+		'showRecordFieldList' => 'sys_language_uid,l10n_parent,l10n_diffsource,hidden,title,list_type,words'
 	),
 	'feInterface' => $TCA['tx_stopwords_lists']['feInterface'],
 	'columns' => array (
@@ -56,14 +56,14 @@ $TCA['tx_stopwords_lists'] = array (
 				'eval' => 'required,trim',
 			)
 		),
-		'type' => array (		
+		'list_type' => array (
 			'exclude' => 0,		
-			'label' => 'LLL:EXT:stopwords/locallang_db.xml:tx_stopwords_lists.type',
+			'label' => 'LLL:EXT:stopwords/locallang_db.xml:tx_stopwords_lists.list_type',
 			'config' => array (
 				'type' => 'radio',
 				'items' => array (
-					array('LLL:EXT:stopwords/locallang_db.xml:tx_stopwords_lists.type.I.0', 'white'),
-					array('LLL:EXT:stopwords/locallang_db.xml:tx_stopwords_lists.type.I.1', 'black'),
+					array('LLL:EXT:stopwords/locallang_db.xml:tx_stopwords_lists.list_type.I.0', 'white'),
+					array('LLL:EXT:stopwords/locallang_db.xml:tx_stopwords_lists.list_type.I.1', 'black'),
 				),
 			)
 		),
@@ -78,7 +78,7 @@ $TCA['tx_stopwords_lists'] = array (
 		),
 	),
 	'types' => array (
-		'0' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, title;;;;2-2-2, type;;;;3-3-3, words'),
+		'0' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, title;;;;2-2-2, list_type;;;;3-3-3, words'),
 	),
 	'palettes' => array (
 		'1' => array('showitem' => '')

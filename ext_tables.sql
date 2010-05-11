@@ -13,7 +13,7 @@ CREATE TABLE tx_stopwords_lists (
 	deleted tinyint(4) DEFAULT '0' NOT NULL,
 	hidden tinyint(4) DEFAULT '0' NOT NULL,
 	title varchar(255) DEFAULT '' NOT NULL,
-	type varchar(5) DEFAULT '' NOT NULL,
+	list_type varchar(5) DEFAULT '' NOT NULL,
 	words text,
 	
 	PRIMARY KEY (uid),

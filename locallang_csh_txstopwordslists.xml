@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!-- $Id$-->
+<T3locallang>
+	<meta type="array">
+		<description>Contents of stopwords csh</description>
+		<type>CSH</type>
+		<csh_table>tx_stopwords_lists</csh_table>
+		<fileId>EXT:stopwords/locallang_csh_txstopwordslists.xml</fileId>
+		<labelContext type="array">
+		</labelContext>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index=".alttitle">Stop words lists</label>
+			<label index=".description">Lists of words that should be either included (white list) or excluded (black list)</label>
+			<label index=".details">
+				Note that the stop words lists do nothing all by themselves. They are meant to be used by extensions.
+			</label>
+			<label index="hidden.description">Hide a list to deactivate it</label>
+			<label index="title.description">Some significant name or label for the list</label>
+			<label index="list_type.description">Choose white for a list of words to include, choose black for a list of words to exclude.</label>
+			<label index="words.description">Enter a list of words.</label>
+			<label index="words.syntax">
+				Words can be entered on several lines. Several words can also be entered on a single line, separated by commas.
+			</label>
+		</languageKey>
+	</data>
+</T3locallang>

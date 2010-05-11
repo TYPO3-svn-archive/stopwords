@@ -17,7 +17,7 @@ $TCA['tx_stopwords_lists'] = array (
 		'enablecolumns' => array (		
 			'disabled' => 'hidden',
 		),
-		'typeicon_column' => 'type',
+		'typeicon_column' => 'list_type',
 		'typeicons' => array(
 			'black' => t3lib_extMgm::extRelPath($_EXTKEY) . 'icon_tx_stopwords_blacklist.gif',
 			'white' => t3lib_extMgm::extRelPath($_EXTKEY) . 'icon_tx_stopwords_whitelist.gif'
@@ -27,4 +27,7 @@ $TCA['tx_stopwords_lists'] = array (
 	),
 );
 t3lib_extMgm::allowTableOnStandardPages('tx_stopwords_lists');
+
+	// Add context sensitive help (csh) for this table
+t3lib_extMgm::addLLrefForTCAdescr('tx_stopwords_lists', 'EXT:' . $_EXTKEY . '/locallang_csh_txstopwordslists.xml');
 ?>

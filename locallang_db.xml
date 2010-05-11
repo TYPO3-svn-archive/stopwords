@@ -8,9 +8,9 @@
 		<languageKey index="default" type="array">
 			<label index="tx_stopwords_lists">Stop words List</label>
 			<label index="tx_stopwords_lists.title">Title</label>
-			<label index="tx_stopwords_lists.type.I.0">White list</label>
-			<label index="tx_stopwords_lists.type.I.1">Black list</label>
-			<label index="tx_stopwords_lists.type">Type</label>
+			<label index="tx_stopwords_lists.list_type.I.0">White list</label>
+			<label index="tx_stopwords_lists.list_type.I.1">Black list</label>
+			<label index="tx_stopwords_lists.list_type">Type</label>
 			<label index="tx_stopwords_lists.words">List of words</label>
 		</languageKey>
 	</data>

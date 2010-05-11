@@ -99,7 +99,7 @@ class tx_stopwords_sv1 extends t3lib_svbase {
 			}
 				// If a record was retrieved, load its content into the internal words list
 			if (count($record) > 0) {
-				$this->listType = $record['type'];
+				$this->listType = $record['list_type'];
 				$lines = t3lib_div::trimExplode("\n", $record['words'], TRUE);
 				foreach ($lines as $aLine) {
 					$words = t3lib_div::trimExplode(',', $aLine, TRUE);
